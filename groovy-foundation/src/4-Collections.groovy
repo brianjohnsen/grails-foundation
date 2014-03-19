@@ -11,14 +11,14 @@ assert list == [1, 2, 3]
 assert list.sum() == 6
 
 //lets play the name game...
-def names = ['Johnny', 'Jens', 'Peter']
-assert names.size() == 3
-assert names.sort() == ['Jens', 'Johnny', 'Peter']
+def names = ['Johnny', 'Jens', 'Søren', 'Peter']
+assert names.size() == 4
+assert names.sort() == ['Jens', 'Johnny', 'Peter', 'Søren']
 
 assert names.find { it.startsWith('P') } == 'Peter'
 
 assert names.min() == 'Jens'
-assert names.max() == 'Peter'
+assert names.max() == 'Søren'
 assert names.max { it.size() } == 'Johnny'
 
 //add to list
